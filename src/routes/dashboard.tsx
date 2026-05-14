@@ -7,8 +7,8 @@ export const Route = createFileRoute("/dashboard")({
   head: () => ({ meta: [{ title: "Dashboard – G-Flux" }] }),
 });
 
-const API = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
-
+//const API = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
+const API = import.meta.env.VITE_API_URL ?? "https://g-flux-production.up.railway.app";
 // ── Types ────────────────────────────────────────────────────
 interface GpuMetrics {
   gpu_util: number;
